@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tap Crayon Shinchan </title>
+    <link rel="stylesheet" href="styles.css" type = "text/css">
+</head>
+
+<body>
+
+    <div class="characters">
+        <img src = "SHIN.webp" alt = "shinchan" onclick="count()"> 
+    </div>
+    
+    <div class="game">
+        <div class ="score">
+            <h2>Score</h2>
+            <h2 class = "countScore">0</h2>
+        </div>
+
+        <p>しんのすけをタップせよ！</p>
+
+        <div class = "difficulties">
+            <button class = "easy" onclick="easy()">Easy</button>
+            <button class = "medium" onclick = "medium()">Medium</button>
+            <button class = "hard" onclick = "hard()">Hard</button>
+            <button onclick = "restart()">Restart</button>
+        </div>
+
+        <div class="timer">
+            Time: <span id="timePassed">0</span> seconds
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
